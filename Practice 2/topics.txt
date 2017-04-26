@@ -1,0 +1,3 @@
+mongodb installations
+commands like use db, show collections, show dbs
+mongoose ...http://mongoosejs.com/
