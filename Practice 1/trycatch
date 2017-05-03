@@ -1,0 +1,17 @@
+function myApiFunc(callback) {
+
+    try {
+    setTimeOut(function() {
+        if(err) {
+            throw err;
+        }
+    }, 1000);
+    } catch (ex) {
+        callback(ex);
+    }
+
+}
+
+myApiFunc(function(err) {
+    console.log(err);
+});
