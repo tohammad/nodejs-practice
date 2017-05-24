@@ -1,0 +1,8 @@
+event loop
+----------
+http://www.journaldev.com/7462/node-js-architecture-single-threaded-event-loop
+
+intro
+------
+http://slides.com/ashwinhegde/nodejs/fullscreen#/2
+
