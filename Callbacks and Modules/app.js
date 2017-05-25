@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var mathLib = require('./mathModule');
+var myModule = require('./simpleModule');
 
 app.get('/', function(req, res) {
     res.send("This is a sample Application");
@@ -15,3 +16,5 @@ app.get('/calculation/:num1/:num2/:operation', function(req, res) {
 app.listen(3000, function() {
     console.log("Application Started");
 });
+
+myModule();
