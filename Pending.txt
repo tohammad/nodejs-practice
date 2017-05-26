@@ -1,5 +1,13 @@
+restaurant example by aditya
+unopinionated meaning by aditya
 module.exports examples
-event loop understanding
-express slides
-mongodb slides
-event emitters
+
+5)	Integration with MongoDB (1 session) Friday (2 June 2017)
+
+6)	Streams, Buffers, Events and Event Emitters (1 session) Monday (5 June 2017)
+
+7)	Exception Handling and Scaling (1 session) Tuesday (6 June 2017)
+
+8)	Introduction to Socket.io (1 session) Wednesday (7 June 2017)
+
+9) 	Deploying projects to cloud (1 session) Thursday (8 June 2017)

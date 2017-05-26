@@ -10,3 +10,7 @@ intro
 ------
 http://slides.com/ashwinhegde/nodejs/fullscreen#/2
 
+Full tutorial
+-------------
+https://www.tutorialspoint.com/nodejs/nodejs_event_emitter.htm
+
