@@ -3,8 +3,8 @@ function myFunc1() {
 }
 
 myFunc1();
-function myFunc2(fn) {
-    fn();
+function myFunc2(cb) {
+    cb();
 }
 
 myFunc2(myFunc1);

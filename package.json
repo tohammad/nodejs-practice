@@ -1,0 +1,17 @@
+{
+  "name": "Node JS Application",
+  "version": "1.0.0",
+  "main": "app.js",
+  "description": "repository of node js application ",
+  "dependencies": {
+   
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "mongoose": "^4.9.4",
+    "morgan": "^1.8.1",
+    "multer": "^1.3.0",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1"
+  }
+}

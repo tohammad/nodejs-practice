@@ -1,0 +1,12 @@
+{
+  "name": "Node-JS-Application",
+  "version": "1.0.0",
+  "main": "app.js",
+  "description": "repository of node js application ",
+  "dependencies": {
+    "body-parser": "latest",
+    "connect-multiparty": "^2.0.0",
+    "express": "latest",
+    "s3fs": "^2.5.0"
+  }
+}

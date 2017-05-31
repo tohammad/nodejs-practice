@@ -1,6 +1,5 @@
 var greet = function() {
-    console.log('aaaaa')
+    console.log("what's up")
 }
 
 module.exports = greet;
-

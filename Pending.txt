@@ -1,10 +1,8 @@
-restaurant example by aditya
+
 unopinionated meaning by aditya
 module.exports examples
 
 5)	Integration with MongoDB (1 session) Friday (2 June 2017)
-
-6)	Streams, Buffers, Events and Event Emitters (1 session) Monday (5 June 2017)
 
 7)	Exception Handling and Scaling (1 session) Tuesday (6 June 2017)
 
