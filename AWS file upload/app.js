@@ -4,10 +4,9 @@ var bodyParser = require("body-parser");
 
 
 
-var s3fsImplementation = new S3FS('hammadtestbucket123', {
-    accessKeyId: 'AKIAIOKK373HEFOVNO3A',
-    secretAccessKey: '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'
-});
+var s3fsImplementation = new S3FS('', {
+    accessKeyId: '',
+    secretAccessKey: ''
 
 //s3fsImplementation.create();
 var express = require('express');
