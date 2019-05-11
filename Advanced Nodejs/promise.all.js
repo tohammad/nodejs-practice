@@ -1,3 +1,5 @@
+// Parallel execution
+
 var fs = require('fs');
 var {promisify} = require('util');
 var writeFile = promisify(fs.writeFile);
