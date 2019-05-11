@@ -1,26 +1,17 @@
-var express = require('express');
-var app = express();
-var myMiddleware = require("./myMiddleware");
+const app = require('express')();
 
-/*
-app.get("*", function(req, res, next){
-    //res.status = 404;
-    next("Not found!");
+
+app.get('/', function(req, res, next) {
+  res.send('successs');
 });
 
-// error handling middleware
-
-app.use(function(err, req, res, next){
-    if(res.status == 404) {
-        res.send("error handling middleware");
-    }
-    else {
-        res.send(err);
-    }
-    next();
-});
-*/
-app.listen(3000, function () {
-    console.log("Application Started");
+app.get('/error', function(req, res, next) {
+  next(new Error('woops'));
 });
 
+app.use(function(error, req, res, next) {
+  // Will get here
+  res.json({ message: error.message });
+});
+
+app.listen(3000);

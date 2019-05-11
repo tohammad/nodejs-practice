@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var myMiddleware = require("./myMiddleware");
 
-app.use(function(req, res, next){
+var myLogger = function(req, res, next) {
     console.log("Time of request is : " + Date.now());
     console.log("Request url is : " + req.originalUrl);
     console.log("Request ip address is : " + req.ip);
@@ -10,7 +10,9 @@ app.use(function(req, res, next){
     // store gloal variable in request object
     req.email   =  "tohammad@gmail.com";
     next();
-});
+}
+
+app.use(myLogger);
 app.get('/', function (req, res) {
     res.send("This is a sample Application");
 });

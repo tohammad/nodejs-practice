@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 var schema = mongoose.Schema;
 
 var dbPath = "mongodb://localhost/myuserapp";
-var db = mongoose.connect(dbPath);   // connect with database
+mongoose.connect(dbPath);   // connect with database
 
 // check db connection is opened
 mongoose.connection.once('open', function(){
@@ -44,11 +44,9 @@ app.get("/users/:name", function(req, res) {
 });
 
 // update user details
-app.put("/users/:id", function(req, res) {
+app.put("/users/:name", function(req, res) {
     var update = req.body;
-    //console.log(update);
-    //console.log(req.params.id);
-    User.findOneAndUpdate({'name': req.params.id}, update, {new:true}, function (err, result){
+    User.findOneAndUpdate({'name': req.params.name}, update, function (err, result){
         if(err) {
             res.send(err);
         }
@@ -59,8 +57,8 @@ app.put("/users/:id", function(req, res) {
 });
 
 // update user details
-app.delete("/users/:id", function(req, res) {
-    User.remove({'name': req.params.id}, function (err, result){
+app.delete("/users/:name", function(req, res) {
+    User.remove({'name': req.params.name}, function (err, result){
         if(err) {
             res.send(err);
         }
